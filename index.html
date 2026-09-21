@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Mahasiswa - Muhammad Reza Fadillah</title>
+  
+  <!-- Google Fonts & Bootstrap Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #f8fafc;
+      color: #334155;
+      scroll-behavior: smooth;
+    }
+    
+    .hero-section {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      color: #ffffff;
+      padding: 5rem 0 4rem;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border: 5px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+    }
+
+    .section-title {
+      position: relative;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 40px;
+      height: 4px;
+      background-color: #3b82f6;
+      border-radius: 2px;
+    }
+
+    .badge-skill {
+      font-size: 0.9rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: 0.5rem;
+      background-color: #eff6ff;
+      color: #1d4ed8;
+      font-weight: 600;
+    }
+
+    .table th {
+      background-color: #f1f5f9;
+      color: #475569;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-code-slash text-primary me-2"></i>Zaae</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header class="hero-section text-center">
+    <div class="container">
+      <img src="12.JPG" alt="Foto profil Muhammad Reza Fadillah" class="rounded-circle profile-img mb-3">
+      <h1 class="fw-bold mb-2">Muhammad Reza Fadillah</h1>
+      <p class="lead opacity-90 mb-4">Mahasiswa Teknik Informatika | Web Learner</p>
+      <div class="d-flex justify-content-center gap-2">
+        <a href="#kontak" class="btn btn-light text-primary fw-semibold px-4"><i class="bi bi-envelope-fill me-1"></i> Hubungi</a>
+        <a href="mailto:mhmmdreza300@gmail.com" class="btn btn-outline-light px-4"><i class="bi bi-send-fill me-1"></i> Kirim Email</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <div class="row g-4">
+
+      <!-- Tentang Saya -->
+      <section id="tentang" class="col-lg-6">
+        <div class="card p-4 h-100">
+          <h2 class="section-title h4"><i class="bi bi-person-fill text-primary me-2"></i>Tentang Saya</h2>
+          <p class="text-secondary leading-relaxed">
+            Saya sedang belajar <span class="badge bg-primary-subtle text-primary fw-semibold">HTML</span> dan ingin membangun web yang <em>terstruktur</em>, bersih, serta mudah digunakan.
+          </p>
+          <div class="alert alert-primary d-flex align-items-center mb-0 mt-auto" role="alert">
+            <i class="bi bi-info-circle-fill me-2 fs-5"></i>
+            <div>
+              Fokus saat ini adalah memperkuat fundamental web development dan git workflow.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Keahlian & Target -->
+      <section id="keahlian" class="col-lg-6">
+        <div class="card p-4 h-100">
+          <h2 class="section-title h4"><i class="bi bi-lightning-charge-fill text-warning me-2"></i>Keahlian yang Sedang Dipelajari</h2>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <span class="badge-skill"><i class="bi bi-filetype-html me-1"></i> HTML</span>
+            <span class="badge-skill"><i class="bi bi-git me-1"></i> Git dasar</span>
+            <span class="badge-skill"><i class="bi bi-cpu me-1"></i> Problem solving</span>
+          </div>
+
+          <h3 class="h5 fw-bold text-dark mb-3">Target Belajar</h3>
+          <ol class="list-group list-group-numbered mb-4 border-0">
+            <li class="list-group-item border-0 ps-0 text-secondary">Menguasai struktur HTML</li>
+            <li class="list-group-item border-0 ps-0 text-secondary">Membuat form interaktif</li>
+            <li class="list-group-item border-0 ps-0 text-secondary">Membangun halaman portofolio</li>
+          </ol>
+
+          <p class="small text-muted mb-0">
+            Kunjungi
+            <a href="https://developer.mozilla.org/" target="_blank" rel="noopener" class="text-decoration-none fw-semibold">
+              MDN Web Docs <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+            untuk referensi tambahan.
+          </p>
+        </div>
+      </section>
+
+      <!-- Riwayat Pendidikan -->
+      <section id="pendidikan" class="col-12">
+        <div class="card p-4">
+          <h2 class="section-title h4"><i class="bi bi-mortarboard-fill text-success me-2"></i>Riwayat Pendidikan</h2>
+          <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+              <thead>
+                <tr>
+                  <th scope="col" style="width: 25%;">Tahun</th>
+                  <th scope="col">Institusi</th>
+                  <th scope="col">Program</th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr>
+                  <td><span class="badge bg-success-subtle text-success">2025 - Sekarang</span></td>
+                  <td class="fw-semibold">Universitas Muhammadiyah Kalimantan Timur</td>
+                  <td>Informatika</td>
+                </tr>
+                <tr>
+                  <td>2021 - 2024</td>
+                  <td class="fw-semibold">SMK Bhakti Loa Janan</td>
+                  <td>Multimedia</td>
+                </tr>
+                <tr>
+                  <td>2018 - 2021</td>
+                  <td class="fw-semibold">SMPN 1 Loa Janan</td>
+                  <td>Reguler</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kontak Form -->
+      <section id="kontak" class="col-lg-8 mx-auto">
+        <div class="card p-4 p-md-5">
+          <h2 class="section-title h4 text-center mb-4"><i class="bi bi-envelope-paper-fill text-primary me-2"></i>Hubungi Saya</h2>
+          
+          <form action="#" method="post">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="nama" class="form-label fw-semibold">Nama</label>
+                <input id="nama" name="nama" type="text" class="form-control" placeholder="Nama Anda" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="email" class="form-label fw-semibold">Email</label>
+                <input id="email" name="email" type="email" class="form-control" placeholder="nama@email.com" required>
+              </div>
+
+              <div class="col-12">
+                <label for="topik" class="form-label fw-semibold">Topik</label>
+                <select id="topik" name="topik" class="form-select">
+                  <option value="tanya">Pertanyaan</option>
+                  <option value="kolaborasi">Kolaborasi</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label for="pesan" class="form-label fw-semibold">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="4" class="form-control" placeholder="Tuliskan pesan Anda..." required></textarea>
+              </div>
+
+              <div class="col-12 text-end mt-4">
+                <button type="submit" class="btn btn-primary px-4 py-2 fw-semibold">
+                  <i class="bi bi-send me-1"></i> Kirim Pesan
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-0 text-secondary">&copy; 2026 Muhammad Reza Fadillah. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
